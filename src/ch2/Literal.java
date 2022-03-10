@@ -35,7 +35,5 @@ public class Literal {
         System.out.printf("[%-20s]%n", url);  //최소 20글자 출력공간 확보(좌측정렬)
         System.out.printf("[%.8s]%n", url);   //왼쪽에서 8글자만 출력
 
-        System.out.println();
-
     }
 }
