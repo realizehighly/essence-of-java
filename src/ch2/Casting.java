@@ -11,5 +11,8 @@ public class Casting {
         System.out.println(d);
         System.out.println(f);
         System.out.println(f2);
+
+        double d3 = 222122222221d;
+        System.out.println((int)d3);
     }
 }
