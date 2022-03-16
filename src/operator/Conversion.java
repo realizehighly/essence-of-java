@@ -22,5 +22,8 @@ public class Conversion {
         char d1 = 'a';
         char d2 = 'a'+1;
         System.out.println(d2);
+
+        int x;
+        System.out.println(x=3);
     }
 }
