@@ -1,4 +1,4 @@
-package ifstatement;
+package control;
 
 public class IfState {
     public static void main(String[] args) {
