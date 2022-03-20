@@ -25,5 +25,22 @@ public class ArrayEx {
         System.arraycopy(abc, 0, result, 0, abc.length);
         System.arraycopy(num, 0, result, abc.length, num.length);
         System.out.println(result);
+
+        int[][] score = new int[4][3];
+        score[0][0] = 100;
+        System.out.println(score[0][0]);
+
+        for (int i = 0; i < score.length; i++) {
+            for (int j = 0; j < score[i].length; j++) {
+                score[i][j] = 10;
+            }
+        }
+
+        int[][] variableArr = new int[5][];
+        variableArr[0] = new int[4];
+        variableArr[1] = new int[3];
+        variableArr[2] = new int[2];
+        variableArr[3] = new int[1];
+        variableArr[4] = new int[3];
     }
 }
