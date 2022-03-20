@@ -34,5 +34,21 @@ public class IfState {
 //                //조건식의 결과와 일치하는 case문이 없을 때 수행
 //                // ...
 //        }
+        System.out.println(getValueViaYield("d"));
+    }
+    private static int getValueViaYield(String mode) {
+        int result = switch (mode) {
+            case "a", "b":
+                yield 1;
+            case "c":
+                yield 2;
+            case "d", "e", "f":
+                // do something here...
+                System.out.println("Supports multi line block!");
+                yield 3;
+            default:
+                yield -1;
+        };
+        return result;
     }
 }
