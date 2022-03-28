@@ -1,17 +1,14 @@
 package oop2;
 
-class Parent{
-    int age;
-
+class Parent {
+    void parentMethod() {}
 }
 
-public class Child extends Parent {
-    void play(){
-        System.out.println("놀자~");
-    }
+class Child extends Parent {
+    void parentMethod() {} // 오버라이딩
+    void parentMethod(int i) {} // 오버로딩
 
-    public static void main(String[] args) {
-        Child c = new Child();
-
-    }
+    void childMethod() {}
+    void childMethod(int i) {} // 오버로딩
+    //void childMethod() {}       // 에러!!! 중복정의 되었음.(already defined in Child)
 }
